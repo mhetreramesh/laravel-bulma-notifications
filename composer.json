@@ -1,0 +1,39 @@
+{
+  "name": "onicial/laravel-bulma-notifications",
+  "description": "Bulma notifications package",
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Ramesh Mhetre",
+      "email": "info@onicial.ch"
+    }
+  ],
+  "require": {
+    "php": ">=7.1"
+  },
+  "require-dev": {
+    "orchestra/testbench": "^3.5",
+    "phpunit/phpunit": "~7.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Onicial\\LaravelBulmaNotifications\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Onicial\\LaravelBulmaNotifications\\Tests\\": "tests/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Onicial\\LaravelBulmaNotifications\\BulmaNotificationsServiceProvider"
+      ],
+      "aliases": {
+        "Notifications": "Onicial\\LaravelBulmaNotifications\\Facades\\Notifications"
+      }
+    }
+  }
+}
